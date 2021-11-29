@@ -61,12 +61,14 @@ namespace IS_1_19_fedyushinaAP
             }
             public override void Display(ListBox lb)
             {
+                lb.Items.Add($"————————————————————————————————"); 
                 lb.Items.Add($"Артикул товара : {_art}");
                 lb.Items.Add($"Цена товара : {_price}");
                 lb.Items.Add($"Год выпуска товара : {_year}");
                 lb.Items.Add($"Тактовая частота процессора :{_gz}");
                 lb.Items.Add($"Количество ядер процессора :{_core}");
                 lb.Items.Add($"Количество потоков процессора :{_potok}");
+                lb.Items.Add($"————————————————————————————————");
             }
         }
 
@@ -102,12 +104,14 @@ namespace IS_1_19_fedyushinaAP
             }
             public override void Display(ListBox lb)
             {
+                lb.Items.Add($"————————————————————————————————");
                 lb.Items.Add($"Артикул товара : {_art}");
                 lb.Items.Add($"Цена товара : {_price}");
                 lb.Items.Add($"Год выпуска товара : {_year}");
                 lb.Items.Add($"Частота видеочипа :{_chast}");
                 lb.Items.Add($"Фирма производитель :{_proizv}");
                 lb.Items.Add($"Объём памяти :{_mem}");
+                lb.Items.Add($"————————————————————————————————");
             }
         }
 
@@ -119,6 +123,12 @@ namespace IS_1_19_fedyushinaAP
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             Video<string> vid = new Video<string>(textBox1.Text, Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox3.Text), textBox7.Text, textBox8.Text, Convert.ToInt32(textBox9.Text));
