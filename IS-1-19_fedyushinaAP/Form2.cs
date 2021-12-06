@@ -22,6 +22,7 @@ namespace IS_1_19_fedyushinaAP
         {
 
         }
+        //класс для подключения к бд
         static class MySql
         {
             public static string host = "caseum.ru";
@@ -39,15 +40,16 @@ namespace IS_1_19_fedyushinaAP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //проверка подключения
             MySqlConnection conec = new MySqlConnection(MySql.sqlconn());
             try
             {
                 conec.Open();
-                MessageBox.Show("YES");
+                MessageBox.Show("da");
             }
             catch
             {
-                MessageBox.Show("FAIL");
+                MessageBox.Show("oshibka podklyucheniya");
                 conec.Close();
             }
         }
