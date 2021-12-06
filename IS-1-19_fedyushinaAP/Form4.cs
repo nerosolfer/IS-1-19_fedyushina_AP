@@ -37,7 +37,7 @@ namespace IS_1_19_fedyushinaAP
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            ConnectDB ConnDb = new ConnectDB();
+            _ConnectDB ConnDb = new _ConnectDB();
             MySqlConnection connDb = new MySqlConnection(ConnDb.Initialization());
             string zapros = "SELECT id, fio, theme_kurs FROM t_stud";
             try

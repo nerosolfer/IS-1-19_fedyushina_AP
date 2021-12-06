@@ -18,7 +18,7 @@ namespace IS_1_19_fedyushinaAP
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Menu());
         }
-        public class ConnectDB
+        public class _ConnectDB
         {
             //тут поля(не рисовые) для значений
             public string conn;

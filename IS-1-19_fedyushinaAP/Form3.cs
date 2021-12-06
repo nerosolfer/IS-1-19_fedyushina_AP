@@ -39,5 +39,17 @@ namespace IS_1_19_fedyushinaAP
             Form4 _form4 = new Form4();
             _form4.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 _form5 = new Form5();
+            _form5.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 _form6 = new Form6();
+            _form6.ShowDialog();
+        }
     }
 }
